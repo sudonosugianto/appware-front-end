@@ -49,7 +49,7 @@ const actions = store => ({
   },
   handleSearch: async (state, keyword, token) => {
     await axios
-      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/item?search=" + keyword, {
+      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/item?search=" + keyword, {
         headers: {
           Authorization: "Bearer " + token
         }
@@ -64,7 +64,7 @@ const actions = store => ({
   },
   handleSearchCategory: async (state, keyword, token) => {
     await axios
-      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/category?search=" + keyword, {
+      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/category?search=" + keyword, {
         headers: {
           Authorization: "Bearer " + token
         }
@@ -79,7 +79,7 @@ const actions = store => ({
   },
   handleSearchPackages: async (state, keyword, token) => {
     await axios
-      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/packages?search=" + keyword, {
+      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/packages?search=" + keyword, {
         headers: {
           Authorization: "Bearer " + token
         }
@@ -94,7 +94,7 @@ const actions = store => ({
   },
   handleSearchSummary: async (state, keyword, token) => {
     await axios
-      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/summary?search=" + keyword, {
+      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/summary?search=" + keyword, {
         headers: {
           Authorization: "Bearer " + token
         }
@@ -109,7 +109,7 @@ const actions = store => ({
   },
   handleSearchSuppliers: async (state, keyword, token) => {
     await axios
-      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/suppliers?search=" + keyword, {
+      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/suppliers?search=" + keyword, {
         headers: {
           Authorization: "Bearer " + token
         }
@@ -124,7 +124,7 @@ const actions = store => ({
   },
   handleSearchCustomers: async (state, keyword, token) => {
     await axios
-      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/customers?search=" + keyword, {
+      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/customers?search=" + keyword, {
         headers: {
           Authorization: "Bearer " + token
         }
@@ -139,7 +139,7 @@ const actions = store => ({
   },
   handleSearchTransactions: async (state, keyword, token) => {
     await axios
-      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/posalestransactions?search=" + keyword, {
+      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/posalestransactions?search=" + keyword, {
         headers: {
           Authorization: "Bearer " + token
         }
@@ -154,7 +154,7 @@ const actions = store => ({
   },
   handleSearchSales: async (state, keyword, token) => {
     await axios
-      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/sales?search=" + keyword, {
+      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/sales?search=" + keyword, {
         headers: {
           Authorization: "Bearer " + token
         }
@@ -170,7 +170,7 @@ const actions = store => ({
   },
   handleSearchPurchaseOrder: async (state, keyword, token) => {
     await axios
-      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/po?search=" + keyword, {
+      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/po?search=" + keyword, {
         headers: {
           Authorization: "Bearer " + token
         }
@@ -185,7 +185,7 @@ const actions = store => ({
   },
   handleSearchQrCode: async (state, keyword, token) => {
     await axios
-      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/track?code=" + keyword, {
+      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/track?code=" + keyword, {
         headers: {
           Authorization: "Bearer " + token
         }
@@ -201,7 +201,7 @@ const actions = store => ({
   getAllItems: async (state, token) => {
     // console.log('Token getAllItems', token)
     await axios
-      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/item", {
+      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/item", {
         headers: {
           Authorization: "Bearer " + token
         }
@@ -219,7 +219,7 @@ const actions = store => ({
   getAllCategory: async (state, token) => {
     // console.log('Token getAllItems', token)
     await axios
-      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/category", {
+      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/category", {
         headers: {
           Authorization: "Bearer " + token
         }
@@ -237,7 +237,7 @@ const actions = store => ({
   getAllPackages: async (state, token) => {
     // console.log('Token getAllItems', token)
     await axios
-      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/packages", {
+      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/packages", {
         headers: {
           Authorization: "Bearer " + token
         }
@@ -255,7 +255,7 @@ const actions = store => ({
   getSuppliers: async (state, token) => {
     // console.log('Token getAllItems', token)
     await axios
-      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/suppliers", {
+      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/suppliers", {
         headers: {
           Authorization: "Bearer " + token
         }
@@ -273,7 +273,7 @@ const actions = store => ({
   getCustomers: async (state, token) => {
     // console.log('Token getAllItems', token)
     await axios
-      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/customers", {
+      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/customers", {
         headers: {
           Authorization: "Bearer " + token
         }
@@ -293,7 +293,7 @@ const actions = store => ({
     // alert(dateBefore)
     // alert(dateAfter)
     await axios
-      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/posalestransactions?dateStart="+dateBefore+"&dateEnd="+dateAfter, {
+      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/posalestransactions?dateStart="+dateBefore+"&dateEnd="+dateAfter, {
         headers: {
           Authorization: "Bearer " + token
         }
@@ -313,7 +313,7 @@ const actions = store => ({
     // alert(dateBefore)
     // alert(dateAfter)
     await axios
-      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/po?dateStart="+dateBefore+"&dateEnd="+dateAfter, {
+      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/po?dateStart="+dateBefore+"&dateEnd="+dateAfter, {
         headers: {
           Authorization: "Bearer " + token
         }
@@ -333,7 +333,7 @@ const actions = store => ({
     // alert(dateBefore)
     // alert(dateAfter)
     await axios
-      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/sales?dateStart="+dateBefore+"&dateEnd="+dateAfter, {
+      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/sales?dateStart="+dateBefore+"&dateEnd="+dateAfter, {
         headers: {
           Authorization: "Bearer " + token
         }
@@ -354,7 +354,7 @@ const actions = store => ({
     // alert(dateAfter)
     
     await axios
-      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/summary?dateStart="+dateBefore+"&dateEnd="+dateAfter, {
+      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/summary?dateStart="+dateBefore+"&dateEnd="+dateAfter, {
         headers: {
           Authorization: "Bearer " + token
         }
@@ -375,7 +375,7 @@ const actions = store => ({
     // alert(dateBefore)
     // alert(dateAfter)
     await axios
-      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/summary", {
+      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/summary", {
         headers: {
           Authorization: "Bearer " + token
         }
@@ -395,7 +395,7 @@ const actions = store => ({
     // alert(dateBefore)
     // alert(dateAfter)
     await axios
-      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/track", {
+      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/track", {
         headers: {
           Authorization: "Bearer " + token
         }
@@ -491,7 +491,7 @@ const actions = store => ({
       password: password,
     };
     await axios
-      .post("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/login", data)
+      .post("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/login", data)
       .then((response) => {
         // console.log("ayam", response.data);
         swal({
@@ -513,7 +513,7 @@ const actions = store => ({
   getEmployees: async (state, token) => {
     console.log('Token getAllItems', token)
     await axios
-      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/subusers", {
+      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/subusers", {
         headers: {
           Authorization: "Bearer " + token
         }

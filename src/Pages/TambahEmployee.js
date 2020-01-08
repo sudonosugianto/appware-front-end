@@ -48,7 +48,7 @@ class TambahEmployee extends Component {
         const self = this;
         axios
             .post(
-                "http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/subusers",
+                "http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/subusers",
                 {
                     fullname: this.state.fullname,
                     phone_number: this.state.phone_number,
