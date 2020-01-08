@@ -1,0 +1,70 @@
+.banner-logo {
+    width: 100%;
+}
+
+.row-center {
+    display: flex;
+    align-items: center;
+}
+
+.banner-title {
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+}
+
+.banner-text {
+    letter-spacing: 1.5px; 
+    margin-bottom: 0px;
+}
+
+.button-text {
+    letter-spacing: 2px;
+    color: white
+}
+
+.btn-banner {
+    background: #4DBAF8;
+    /* border-color: #4DBAF8; */
+    border: none;
+    color: white;
+    box-shadow: 0 5px 15px -5px #00000070;
+    overflow: hidden;
+    position: relative;
+    transition: 0.2s linear;
+}
+
+.btn-banner:hover {
+    transform: scale(1.1);
+    color: white;
+    /* background-color: #FF7500; */
+}
+
+.btn-banner::before {
+    content: "";
+    position: absolute;
+    width: 210%;
+    height: 120%;
+    background-color: rgba(255,255,255, 0.5);
+    transform: rotate(-45deg);
+    left: 90%;
+    top: 90%;
+}
+
+.btn-banner:hover::before {
+    animation: animate 1.0s 1;
+    top: 10%;
+    left: 10%;
+}
+
+@keyframes animate {
+    0% {
+        left: -110%;
+        top: 90%
+    }50%{
+        left: 10%;
+        top: -30%
+    }100%{
+        top: 10%;
+        left: 10%;
+    }
+}

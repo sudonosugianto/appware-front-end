@@ -1,0 +1,23 @@
+.btn-notmatch {
+    background: linear-gradient(90deg, #22c1c3, #6f86d6, #48c6ef);
+    background-size: 400%;
+    border: none;
+    box-shadow: 0 5px 15px -5px #00000070;
+    overflow: hidden;
+    transition: 0.2s linear;
+    animation: animate 6s linear infinite;
+}
+
+.btn-notmatch:hover {
+    transform: scale(1.1);
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0%
+    }
+    100%
+    {
+        background-position: 400%
+    }
+}

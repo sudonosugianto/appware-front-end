@@ -1,0 +1,19 @@
+.features-logo {
+    width: 33%
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.card-testimony {
+    border: none;
+}
+
+.testimony-text {
+    line-height: 30px;
+    letter-spacing: 1px; 
+}

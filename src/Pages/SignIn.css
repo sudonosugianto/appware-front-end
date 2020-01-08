@@ -1,0 +1,67 @@
+.login-logo {
+    height: 60px;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.login {
+    -webkit-box-shadow: 0 6px 6px -6px #999;
+    -moz-box-shadow: 0 6px 6px -6px #999;
+    box-shadow: 0 6px 6px -6px #999;
+}
+
+.login-text {
+    font-size: 25px;
+    font-weight: 700;    
+}
+
+.login-row-middle {
+    display: flex;
+    align-items: center;
+}
+
+.text-signin {
+    color: #2487A6;
+}
+
+
+
+/* FORM */
+
+.card-signin {
+    border: 0;
+    border-radius: 1rem;
+}
+
+.card-signin .card-title {
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.card-signin .card-body {
+    padding: 2rem;
+}
+
+.form-signin {
+    width: 100%;
+}
+
+.form-signin .btn {
+    font-size: 80%;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.2s;
+    height: 45px;
+}
+
+.form-control {
+    height: 45px
+}
+
+.btn-signin {
+    background-color: #4DBAF8;
+    border-color: #4DBAF8;
+}

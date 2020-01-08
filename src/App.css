@@ -1,0 +1,132 @@
+.qropen {
+    display: none;
+}
+
+.profile-row {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.profile-row:hover .overlay {
+    opacity: 1;
+}
+
+.icon {
+    color: #fafafa;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* .fa-edit:hover {
+    color: #eee;
+} */
+
+.rotate {
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.rotate.down {
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.rotate.up {
+    -ms-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.text {
+    color: black;
+}
+
+.table-button {
+    background-color: #2F7DCC;
+    border-color: #2F7DCC;
+    color: white
+}
+
+.table-button:hover {
+    background-color: #215890;
+    border-color: #215890;
+}
+
+.sales-nav .nav-link:hover {
+    background-color: #E8E8E8;
+    border-color: #E8E8E8;
+}
+
+.nav-pills .active {
+    background-color: #2F7DCC !important;
+}
+
+.text-align {
+    text-align: right
+}
+
+.title-align {
+    text-align: left
+}
+
+.row-center {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    border-radius: 30px;
+}
+
+.search-btn {
+    float: right;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-txt {
+    float: left;
+    transition: 0.4s;
+}
+
+.appware-form {
+    border-radius: 30px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .text-align {
+        text-align: center;
+    }
+
+    .title-align {
+        text-align: center
+    }
+}
