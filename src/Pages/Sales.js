@@ -11,8 +11,8 @@ import { actions } from "../store";
 import moment from 'moment'
 import ModalDatePicker from "../Pages/ModalDatePicker"
 
-const getAllSales = "https://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/sales";
-const searchKeyword = "https://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/sales?search=";
+const getAllSales = "http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/sales";
+const searchKeyword = "http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/sales?search=";
 
 
 class Sales extends Component {

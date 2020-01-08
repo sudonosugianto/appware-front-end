@@ -34,7 +34,7 @@ class SignUp extends Component {
 	  event.preventDefault();
 	  const self = this;
 	  axios
-		.post("https://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users", {
+		.post("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users", {
 		  fullname: this.state.fullname,
 		  username: this.state.username,
 		  password: this.state.password,

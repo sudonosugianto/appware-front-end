@@ -19,7 +19,7 @@ class ModalDeleteEmployee extends React.Component {
   handleDelete = event => {
     event.preventDefault();    
     let token = this.props.token;
-    const url = "https://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/subusers/";
+    const url = "http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/subusers/";
     const headers = {
       Authorization: "Bearer " + token
     };

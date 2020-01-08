@@ -12,8 +12,8 @@ import QrReader from 'react-qr-scanner'
 var QRCode = require('qrcode.react');
 
 
-const getAllPackages = "https://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/packages";
-const getAllCustomers = "https://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/customers";
+const getAllPackages = "http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/packages";
+const getAllCustomers = "http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/customers";
 
 
 class TambahSales extends Component {
@@ -87,7 +87,7 @@ class TambahSales extends Component {
     const self = this;
     axios
       .post(
-        "https://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/sales",
+        "http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/sales",
         {
           customerSalesID: self.state.customerSalesID,
           packageSalesID: self.state.packageSalesID,

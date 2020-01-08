@@ -7,7 +7,7 @@ import { withRouter} from 'react-router-dom'
 import { connect } from "unistore/react";
 import { actions } from "../store";
 
-const getAllItem = "https://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/item";
+const getAllItem = "http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/item";
 class EditPackages extends Component {
   state = {
     ListAdmin: [],
@@ -38,7 +38,7 @@ class EditPackages extends Component {
         console.log(error);
     });
     axios
-      .get("https://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/packages/" + this.props.match.params.id,{headers})
+      .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/packages/" + this.props.match.params.id,{headers})
       .then(response => {
         const data = response.data.package[0]
         self.setState({ 
@@ -61,7 +61,7 @@ class EditPackages extends Component {
     const id = this.props.match.params.id
     axios
       .put(
-        "https://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/packages/"+id,
+        "http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/packages/"+id,
         {
           itemID: this.state.itemID,
           package_name: this.state.package_name,

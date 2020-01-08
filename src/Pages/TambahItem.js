@@ -9,7 +9,7 @@ import { connect } from "unistore/react";
 import { actions } from "../store";
 
 const tambahAdmin = "http://52.77.222.248:8000/user/item";
-const getAllItem = "https://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/category";
+const getAllItem = "http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/category";
 
 class TambahItem extends Component {
   state = {
@@ -65,7 +65,7 @@ class TambahItem extends Component {
     const self = this;
     axios
       .post(
-        "https://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/item",
+        "http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/item",
         {
           item: this.state.item,
           picture: this.state.picture,

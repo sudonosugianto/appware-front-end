@@ -27,7 +27,7 @@ class ItemDetail extends Component {
         Authorization: "Bearer " + token
     };
     axios
-        .get("https://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/item/" + this.props.match.params.id,{headers})
+        .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com/api/users/item/" + this.props.match.params.id,{headers})
         .then(response => {
         const data = response.data.item[0]
         self.setState({ 
