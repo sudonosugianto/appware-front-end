@@ -49,7 +49,7 @@ class EditCustomers extends Component {
         Authorization: "Bearer " + token
     };
     axios
-        .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/customers/" + this.props.match.params.id,{headers})
+        .get("http://ec2-54-255-236-0.ap-southeast-1.compute.amazonaws.com/api/users/customers/" + this.props.match.params.id,{headers})
         .then(response => {
         const data = response.data.customer[0]
         self.setState({ 
@@ -74,7 +74,7 @@ class EditCustomers extends Component {
       const self = this;
       axios
           .put(
-          "http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/customers/" + id,
+          "http://ec2-54-255-236-0.ap-southeast-1.compute.amazonaws.com/api/users/customers/" + id,
           {
             fullname: this.state.fullname,
             phoneNumber: this.state.phoneNumber,

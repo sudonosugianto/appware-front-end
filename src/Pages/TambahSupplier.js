@@ -50,7 +50,7 @@ class TambahSupplier extends Component {
     const self = this;
     axios
       .post(
-        "http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/suppliers",
+        "http://ec2-54-255-236-0.ap-southeast-1.compute.amazonaws.com/api/users/suppliers",
         {
           name: this.state.name,
           phone_number: this.state.phone_number,

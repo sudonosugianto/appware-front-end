@@ -22,7 +22,7 @@ class ModalDeleteSupplier extends React.Component {
     // this.setState({ id: event.target.value });
 
     let token = this.props.token;
-    const url = "http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/suppliers/";
+    const url = "http://ec2-54-255-236-0.ap-southeast-1.compute.amazonaws.com/api/users/suppliers/";
     const headers = {
       Authorization: "Bearer " + token
     };

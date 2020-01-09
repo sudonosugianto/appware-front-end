@@ -25,7 +25,7 @@ class EditItem extends Component {
         Authorization: "Bearer " + token
     };
     axios
-        .get("http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/item/" + this.props.match.params.id,{headers})
+        .get("http://ec2-54-255-236-0.ap-southeast-1.compute.amazonaws.com/api/users/item/" + this.props.match.params.id,{headers})
         .then(response => {
         const data = response.data.item[0]
         self.setState({ 
@@ -65,7 +65,7 @@ class EditItem extends Component {
     const self = this;
     axios
         .put(
-        "http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/item/" + id,
+        "http://ec2-54-255-236-0.ap-southeast-1.compute.amazonaws.com/api/users/item/" + id,
         {
             item: this.state.item,
             picture: this.state.picture,

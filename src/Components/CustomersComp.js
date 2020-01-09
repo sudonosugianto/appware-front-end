@@ -10,7 +10,7 @@ class CustomersComp extends Component {
   handleDelete = event => {
     event.preventDefault();    
     let token = localStorage.getItem("token");
-    const url = "http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/users/customers/";
+    const url = "http://ec2-54-255-236-0.ap-southeast-1.compute.amazonaws.com/api/users/customers/";
     const headers = {
       Authorization: "Bearer " + token
     };

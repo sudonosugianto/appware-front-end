@@ -20,7 +20,7 @@ const NavBar = () => {
 								<a className="nav-link" href="tel:081938486386" style={{ padding: 0 }}>
 									<span className="nav-text-phone">
 										<i className="fas fa-phone" style={{ marginRight: 10 }}></i>
-											Call Me
+											1500 300
 									</span>
 								</a>
 							</li>
@@ -28,13 +28,13 @@ const NavBar = () => {
 
 						<ul className="navbar-nav mr-auto">
 							<li className="nav-item active">
-								{/* <a className="nav-link" href="#">Tentang</a> */}
+								<a className="nav-link" href="#">Tentang</a>
 							</li>
 							<li className="nav-item active">
-								{/* <a className="nav-link" href="#">Fitur</a> */}
+								<a className="nav-link" href="#">Fitur</a>
 							</li>
 							<li className="nav-item active">
-								{/* <a className="nav-link" href="http://docs.appware.tech" target="_blank">API</a> */}
+								<a className="nav-link" href="http://docs.appware.tech" target="_blank">API</a>
 							</li>
 						</ul>
 

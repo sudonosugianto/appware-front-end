@@ -10,7 +10,7 @@ import { connect } from "unistore/react";
 import { actions } from "../store";
 
 // local
-const getallCtegorySales = "http://ec2-54-179-157-83.ap-southeast-1.compute.amazonaws.com:5000/api/user/categorysummary";
+const getallCtegorySales = "http://ec2-54-255-236-0.ap-southeast-1.compute.amazonaws.com/api/user/categorysummary";
 class CategorySales extends Component {
     state = {
         ListCategorySummary: [],

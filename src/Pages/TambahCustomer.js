@@ -50,7 +50,7 @@ class TambahCustomer extends Component {
     const self = this;
     axios
       .post(
-        "https://api.appware.tech/api/users/customers",
+        "http://ec2-54-255-236-0.ap-southeast-1.compute.amazonaws.com/api/users/customers",
         {
           fullname: this.state.fullname,
           phoneNumber: this.state.phoneNumber,
