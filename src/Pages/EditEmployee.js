@@ -44,7 +44,7 @@ class EditEmployee extends Component {
             Authorization: "Bearer " + token
         };
         axios
-            .get("http://ec2-54-255-236-0.ap-southeast-1.compute.amazonaws.com/api/users/subusers/" + this.props.match.params.id, { headers })
+            .get("https://appware.halte.id/api/users/subusers/" + this.props.match.params.id, { headers })
             .then(response => {
                 const data = response.data.subuser[0]
                 self.setState({
@@ -68,7 +68,7 @@ class EditEmployee extends Component {
         const self = this;
         axios
             .put(
-                "http://ec2-54-255-236-0.ap-southeast-1.compute.amazonaws.com/api/users/subusers/" + id,
+                "https://appware.halte.id/api/users/subusers/" + id,
                 {
                     fullname: this.state.fullname,
                     phone_number: this.state.phone_number,

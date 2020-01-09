@@ -8,7 +8,7 @@ import { withRouter } from 'react-router-dom'
 import { connect } from "unistore/react";
 import { actions } from "../store";
 
-const getUser = "http://ec2-54-255-236-0.ap-southeast-1.compute.amazonaws.com/api/users";
+const getUser = "https://appware.halte.id/api/users";
 class EditProfile extends Component {
     state = {
         fullname: '',
@@ -76,7 +76,7 @@ class EditProfile extends Component {
         console.log(body)
         axios
             .put(
-                "http://ec2-54-255-236-0.ap-southeast-1.compute.amazonaws.com/api/users/" + this.state.id,
+                "https://appware.halte.id/api/users/" + this.state.id,
                 body,
                 {
                     headers: {

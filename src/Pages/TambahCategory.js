@@ -25,7 +25,7 @@ class TambahCategory extends Component {
     const self = this;
     axios
       .post(
-        "http://ec2-54-255-236-0.ap-southeast-1.compute.amazonaws.com/api/users/category",
+        "https://appware.halte.id/api/users/category",
         {
 
           category: this.state.category

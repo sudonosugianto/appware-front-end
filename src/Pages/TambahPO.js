@@ -8,8 +8,8 @@ import { withRouter} from 'react-router-dom'
 import { connect } from "unistore/react";
 import { actions } from "../store";
 
-const tambahPackages = "http://ec2-54-255-236-0.ap-southeast-1.compute.amazonaws.com/api/users/packages";
-const tambahSupp = "http://ec2-54-255-236-0.ap-southeast-1.compute.amazonaws.com/api/users/suppliers";
+const tambahPackages = "https://appware.halte.id/api/users/packages";
+const tambahSupp = "https://appware.halte.id/api/users/suppliers";
 
 class TambahPO extends Component {
   state = {
@@ -61,7 +61,7 @@ class TambahPO extends Component {
     const self = this;
     axios
       .post(
-        "http://ec2-54-255-236-0.ap-southeast-1.compute.amazonaws.com/api/users/po",
+        "https://appware.halte.id/api/users/po",
         {
             supplierID: this.state.supplierID,
             packagePOID: this.state.packagePOID,

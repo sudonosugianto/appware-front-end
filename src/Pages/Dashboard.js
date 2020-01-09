@@ -8,9 +8,9 @@ import { withRouter } from 'react-router-dom'
 import { connect } from "unistore/react";
 import { actions } from "../store";
 
-const getBarchart = "http://ec2-54-255-236-0.ap-southeast-1.compute.amazonaws.com/api/user/topitemcat";
-const getsummarytransaction = "http://ec2-54-255-236-0.ap-southeast-1.compute.amazonaws.com/api/users/transactionssummary";
-const getCatVol = "http://ec2-54-255-236-0.ap-southeast-1.compute.amazonaws.com/api/user/catbyvol";
+const getBarchart = "https://appware.halte.id/api/user/topitemcat";
+const getsummarytransaction = "https://appware.halte.id/api/users/transactionssummary";
+const getCatVol = "https://appware.halte.id/api/user/catbyvol";
 class Dashboard extends Component {
     // convert
     convertToRupiah(num) {

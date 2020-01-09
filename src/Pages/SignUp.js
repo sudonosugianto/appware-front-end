@@ -34,7 +34,7 @@ class SignUp extends Component {
 	  event.preventDefault();
 	  const self = this;
 	  axios
-		.post("http://ec2-54-255-236-0.ap-southeast-1.compute.amazonaws.com/api/users", {
+		.post("https://appware.halte.id/api/users", {
 		  fullname: this.state.fullname,
 		  username: this.state.username,
 		  password: this.state.password,

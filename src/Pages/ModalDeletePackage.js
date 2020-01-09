@@ -19,7 +19,7 @@ class ModalDeletePackage extends React.Component {
   handleDelete = event => {
     event.preventDefault();    
     let token = this.props.token;
-    const url = "http://ec2-54-255-236-0.ap-southeast-1.compute.amazonaws.com/api/users/packages/";
+    const url = "https://appware.halte.id/api/users/packages/";
     const headers = {
       Authorization: "Bearer " + token
     };

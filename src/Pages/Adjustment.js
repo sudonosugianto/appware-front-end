@@ -13,7 +13,7 @@ import { actions } from "../store";
 
 
 // local
-const getAllActualStocks = "http://ec2-54-255-236-0.ap-southeast-1.compute.amazonaws.com/api/users/actualstock";
+const getAllActualStocks = "https://appware.halte.id/api/users/actualstock";
 class Adjustment extends Component {
     state = {
         ListAdjustment: [],

@@ -11,7 +11,7 @@ import { connect } from "unistore/react";
 import { actions } from "../store";
 import moment from 'moment'
 
-const getUser = "http://ec2-54-255-236-0.ap-southeast-1.compute.amazonaws.com/api/users";
+const getUser = "https://appware.halte.id/api/users";
 
 class Profile extends Component {
 

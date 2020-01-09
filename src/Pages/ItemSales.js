@@ -9,7 +9,7 @@ import { withRouter} from 'react-router-dom'
 import { connect } from "unistore/react";
 import { actions } from "../store";
 
-const getAllitemSales = "http://ec2-54-255-236-0.ap-southeast-1.compute.amazonaws.com/api/users/packagessummary";
+const getAllitemSales = "https://appware.halte.id/api/users/packagessummary";
 class ItemSales extends Component {
     state = {
         ListItemSales: [],
