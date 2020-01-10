@@ -22,7 +22,7 @@ class ModalDeleteSupplier extends React.Component {
     // this.setState({ id: event.target.value });
 
     let token = this.props.token;
-    const url = "https://appware.halte.id/api/users/suppliers/";
+    const url = "https://appware-api.halte.id/api/users/suppliers/";
     const headers = {
       Authorization: "Bearer " + token
     };

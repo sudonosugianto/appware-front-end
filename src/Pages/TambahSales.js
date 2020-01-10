@@ -12,8 +12,8 @@ import QrReader from 'react-qr-scanner'
 var QRCode = require('qrcode.react');
 
 
-const getAllPackages = "https://appware.halte.id/api/users/packages";
-const getAllCustomers = "https://appware.halte.id/api/users/customers";
+const getAllPackages = "https://appware-api.halte.id/api/users/packages";
+const getAllCustomers = "https://appware-api.halte.id/api/users/customers";
 
 
 class TambahSales extends Component {
@@ -87,7 +87,7 @@ class TambahSales extends Component {
     const self = this;
     axios
       .post(
-        "https://appware.halte.id/api/users/sales",
+        "https://appware-api.halte.id/api/users/sales",
         {
           customerSalesID: self.state.customerSalesID,
           packageSalesID: self.state.packageSalesID,

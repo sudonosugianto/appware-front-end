@@ -48,7 +48,7 @@ class TambahEmployee extends Component {
         const self = this;
         axios
             .post(
-                "https://appware.halte.id/api/users/subusers",
+                "https://appware-api.halte.id/api/users/subusers",
                 {
                     fullname: this.state.fullname,
                     phone_number: this.state.phone_number,

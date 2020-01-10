@@ -22,7 +22,7 @@ class EditCategory extends Component {
             Authorization: "Bearer " + token
         };
         axios
-            .get("https://appware.halte.id/api/users/category/" + this.props.match.params.id, { headers })
+            .get("https://appware-api.halte.id/api/users/category/" + this.props.match.params.id, { headers })
             .then(response => {
                 const data = response.data.category
                 self.setState({
@@ -44,7 +44,7 @@ class EditCategory extends Component {
         const self = this;
         axios
             .put(
-                "https://appware.halte.id/api/users/category/" + id,
+                "https://appware-api.halte.id/api/users/category/" + id,
                 {
                     category: this.state.category
                 },

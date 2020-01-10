@@ -11,7 +11,7 @@ class EmployeesComp extends Component {
   handleDelete = event => {
     event.preventDefault();
     let token = localStorage.getItem("token");
-    const url = "https://appware.halte.id/api/users/subusers/";
+    const url = "https://appware-api.halte.id/api/users/subusers/";
     const headers = {
       Authorization: "Bearer " + token
     };

@@ -12,7 +12,7 @@ import { withRouter} from 'react-router-dom'
 import { connect } from "unistore/react";
 import { actions } from "../store";
 
-const getallSalesSummary = "https://appware.halte.id/api/users/transactionssummary";
+const getallSalesSummary = "https://appware-api.halte.id/api/users/transactionssummary";
 
 class SalesSummary extends Component {
     convertToRupiah(num) {

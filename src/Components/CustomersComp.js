@@ -10,7 +10,7 @@ class CustomersComp extends Component {
   handleDelete = event => {
     event.preventDefault();    
     let token = localStorage.getItem("token");
-    const url = "https://appware.halte.id/api/users/customers/";
+    const url = "https://appware-api.halte.id/api/users/customers/";
     const headers = {
       Authorization: "Bearer " + token
     };

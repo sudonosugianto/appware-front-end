@@ -49,7 +49,7 @@ class EditCustomers extends Component {
         Authorization: "Bearer " + token
     };
     axios
-        .get("https://appware.halte.id/api/users/customers/" + this.props.match.params.id,{headers})
+        .get("https://appware-api.halte.id/api/users/customers/" + this.props.match.params.id,{headers})
         .then(response => {
         const data = response.data.customer[0]
         self.setState({ 
@@ -74,7 +74,7 @@ class EditCustomers extends Component {
       const self = this;
       axios
           .put(
-          "https://appware.halte.id/api/users/customers/" + id,
+          "https://appware-api.halte.id/api/users/customers/" + id,
           {
             fullname: this.state.fullname,
             phoneNumber: this.state.phoneNumber,

@@ -19,7 +19,7 @@ class ModalDeleteEmployee extends React.Component {
   handleDelete = event => {
     event.preventDefault();    
     let token = this.props.token;
-    const url = "https://appware.halte.id/api/users/subusers/";
+    const url = "https://appware-api.halte.id/api/users/subusers/";
     const headers = {
       Authorization: "Bearer " + token
     };

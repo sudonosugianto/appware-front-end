@@ -10,7 +10,7 @@ import { connect } from "unistore/react";
 import { actions } from "../store";
 
 // local
-const getallCtegorySales = "https://appware.halte.id/api/user/categorysummary";
+const getallCtegorySales = "https://appware-api.halte.id/api/user/categorysummary";
 class CategorySales extends Component {
     state = {
         ListCategorySummary: [],

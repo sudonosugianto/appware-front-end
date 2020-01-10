@@ -13,7 +13,7 @@ import { actions } from "../store";
 
 
 // local
-const getAllActualStocks = "https://appware.halte.id/api/users/actualstock";
+const getAllActualStocks = "https://appware-api.halte.id/api/users/actualstock";
 class Adjustment extends Component {
     state = {
         ListAdjustment: [],

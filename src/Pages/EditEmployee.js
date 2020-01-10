@@ -44,7 +44,7 @@ class EditEmployee extends Component {
             Authorization: "Bearer " + token
         };
         axios
-            .get("https://appware.halte.id/api/users/subusers/" + this.props.match.params.id, { headers })
+            .get("https://appware-api.halte.id/api/users/subusers/" + this.props.match.params.id, { headers })
             .then(response => {
                 const data = response.data.subuser[0]
                 self.setState({
@@ -68,7 +68,7 @@ class EditEmployee extends Component {
         const self = this;
         axios
             .put(
-                "https://appware.halte.id/api/users/subusers/" + id,
+                "https://appware-api.halte.id/api/users/subusers/" + id,
                 {
                     fullname: this.state.fullname,
                     phone_number: this.state.phone_number,

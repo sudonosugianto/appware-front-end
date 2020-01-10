@@ -20,7 +20,7 @@ class ModalDeleteCategory extends React.Component {
   handleDelete = event => {
     event.preventDefault();    
     let token = this.props.token;
-    const url = "https://appware.halte.id/api/users/category/";
+    const url = "https://appware-api.halte.id/api/users/category/";
     const headers = {
       Authorization: "Bearer " + token
     };

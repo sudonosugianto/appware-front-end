@@ -48,7 +48,7 @@ class EditSupplier extends Component {
         Authorization: "Bearer " + token
     };
     axios
-        .get("https://appware.halte.id/api/users/suppliers/" + this.props.match.params.id,{headers})
+        .get("https://appware-api.halte.id/api/users/suppliers/" + this.props.match.params.id,{headers})
         .then(response => {
         const data = response.data.package[0]
         self.setState({ 
@@ -73,7 +73,7 @@ class EditSupplier extends Component {
       const self = this;
       axios
           .put(
-          "https://appware.halte.id/api/users/suppliers/" + id,
+          "https://appware-api.halte.id/api/users/suppliers/" + id,
           {
             name: this.state.name,
             phone_number: this.state.phone_number,

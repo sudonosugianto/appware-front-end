@@ -27,7 +27,7 @@ class ItemDetail extends Component {
         Authorization: "Bearer " + token
     };
     axios
-        .get("https://appware.halte.id/api/users/item/" + this.props.match.params.id,{headers})
+        .get("https://appware-api.halte.id/api/users/item/" + this.props.match.params.id,{headers})
         .then(response => {
         const data = response.data.item[0]
         self.setState({ 

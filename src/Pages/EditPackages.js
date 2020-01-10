@@ -7,7 +7,7 @@ import { withRouter} from 'react-router-dom'
 import { connect } from "unistore/react";
 import { actions } from "../store";
 
-const getAllItem = "https://appware.halte.id/api/users/item";
+const getAllItem = "https://appware-api.halte.id/api/users/item";
 class EditPackages extends Component {
   state = {
     ListAdmin: [],
@@ -38,7 +38,7 @@ class EditPackages extends Component {
         console.log(error);
     });
     axios
-      .get("https://appware.halte.id/api/users/packages/" + this.props.match.params.id,{headers})
+      .get("https://appware-api.halte.id/api/users/packages/" + this.props.match.params.id,{headers})
       .then(response => {
         const data = response.data.package[0]
         self.setState({ 
@@ -61,7 +61,7 @@ class EditPackages extends Component {
     const id = this.props.match.params.id
     axios
       .put(
-        "https://appware.halte.id/api/users/packages/"+id,
+        "https://appware-api.halte.id/api/users/packages/"+id,
         {
           itemID: this.state.itemID,
           package_name: this.state.package_name,

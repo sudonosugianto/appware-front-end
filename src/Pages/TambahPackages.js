@@ -7,7 +7,7 @@ import { withRouter} from 'react-router-dom'
 import { connect } from "unistore/react";
 import { actions } from "../store";
 
-const getAllItem = "https://appware.halte.id/api/users/item";
+const getAllItem = "https://appware-api.halte.id/api/users/item";
 
 class TambahPackages extends Component {
   state = {
@@ -42,7 +42,7 @@ class TambahPackages extends Component {
     const self = this;
     axios
       .post(
-        "https://appware.halte.id/api/users/packages",
+        "https://appware-api.halte.id/api/users/packages",
         {
           itemID: this.state.itemID,
           package_name: this.state.package_name,

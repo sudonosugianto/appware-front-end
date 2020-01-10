@@ -25,7 +25,7 @@ class DetailPackages extends Component {
             Authorization: "Bearer " + token
         };
         axios
-            .get("https://appware.halte.id/api/users/packages/" + this.props.match.params.id, { headers })
+            .get("https://appware-api.halte.id/api/users/packages/" + this.props.match.params.id, { headers })
             .then(response => {
                 const data = response.data.package[0]
                 self.setState({

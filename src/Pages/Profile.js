@@ -11,7 +11,7 @@ import { connect } from "unistore/react";
 import { actions } from "../store";
 import moment from 'moment'
 
-const getUser = "https://appware.halte.id/api/users";
+const getUser = "https://appware-api.halte.id/api/users";
 
 class Profile extends Component {
 

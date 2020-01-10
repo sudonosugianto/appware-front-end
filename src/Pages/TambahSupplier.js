@@ -50,7 +50,7 @@ class TambahSupplier extends Component {
     const self = this;
     axios
       .post(
-        "https://appware.halte.id/api/users/suppliers",
+        "https://appware-api.halte.id/api/users/suppliers",
         {
           name: this.state.name,
           phone_number: this.state.phone_number,

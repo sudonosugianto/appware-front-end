@@ -25,7 +25,7 @@ class EditItem extends Component {
         Authorization: "Bearer " + token
     };
     axios
-        .get("https://appware.halte.id/api/users/item/" + this.props.match.params.id,{headers})
+        .get("https://appware-api.halte.id/api/users/item/" + this.props.match.params.id,{headers})
         .then(response => {
         const data = response.data.item[0]
         self.setState({ 
@@ -65,7 +65,7 @@ class EditItem extends Component {
     const self = this;
     axios
         .put(
-        "https://appware.halte.id/api/users/item/" + id,
+        "https://appware-api.halte.id/api/users/item/" + id,
         {
             item: this.state.item,
             picture: this.state.picture,
